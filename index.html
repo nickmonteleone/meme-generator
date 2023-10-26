@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <!-- local css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap import -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="body-background">
+  <section class="title-background">
+    <h1 class="title-text">
+      Meme Generator
+      <img class="header-image" src="images/dat-boi.png" alt="Dat Boi">
+    </h1>
+  </section>
+
+  <section class="main-background">
+    <form class="input-box">
+      <h2 class="param-text button-box">
+        1. &nbsp;&nbsp;
+        <input id="image-file" type="file" value="Upload an Image">
+      </h2>
+      <br>
+      <h2 class="param-text text-box">
+        2. Enter top text:
+        <input type="text" id="top-text">
+      </h2>
+      <br>
+      <h2 class="param-text text-box">
+        3. Enter bottom text:
+        <input type="text" id="bottom-text">
+      </h2>
+      <br>
+      <h2 class="param-text button-box">
+        4. &nbsp;
+        <input type="submit" value="Generate Meme">
+      </h2>
+      <br><br>
+    </form>
+    <div class="meme-box">
+      <img class="meme-image" src="images/dat-boi-bike.gif" alt="Placeholder">
+      <div class="meme-text top-text">Top Text</div>
+      <div class="meme-text bottom-text">Bottom</div>
+    </div>
+
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

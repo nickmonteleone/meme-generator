@@ -1,0 +1,120 @@
+/* font from google fonts - jost */
+@font-face {
+  font-family: 'Jost';
+  src: url('fonts/Jost-VariableFont_wght.ttf') format('truetype'),
+    url('fonts/OFL.txt') format('woff')
+}
+
+/* impact font for meme */
+@font-face {
+  font-family: 'Impact';
+  src: url('fonts/impact.ttf') format('truetype');
+}
+
+
+/* font styling for all text */
+* {
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+.body-background {
+  background: #D3D3D4;
+}
+
+.header-image {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.title-background {
+  background: #CCB4FF;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.title-text {
+  color: #100934;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.main-background {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.param-text {
+  color: #100934;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.button-box {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.text-box {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+}
+
+.meme-image {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 1;
+}
+
+.meme-box {
+  position: relative;
+  text-align: center;
+}
+
+.meme-text {
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 1px;
+  color: #ffffff;
+  font-family: 'Impact';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* text positioning from https://w3schools.com/howto/howto_css_image_text.asp */
+.top-text {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+
+.bottom-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+}
