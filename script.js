@@ -50,6 +50,12 @@ function generateMeme(event) {
     memeClose.addEventListener("click", function () {
       // get meme box parent element and remove from the DOM
       const parentMemeBox = memeClose.parentElement;
+      // clear meme text if most recent meme is closed
+      let memeNumberDeleted = parentMemeBox.id.substring(5);
+      if (memeNumberDeleted == memesCreated) {
+        const inputResultText = document.getElementById('input-result-text');
+        inputResultText.innerText = '';
+      }
       parentMemeBox.remove();
     });
     // add to end if first meme, otherwise before the most recent
