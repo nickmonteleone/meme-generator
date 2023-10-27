@@ -21,17 +21,20 @@ function generateMeme(event) {
   // create meme box with number of meme
   const memeBox = document.createElement('div');
   memeBox.classList.add('meme-box');
-  // create elements for the meme image and text
+  // create elements for the meme image, text, and close button
   const memeImage = document.createElement("img");
   memeImage.classList.add('meme-image');
   const memeTopText = document.createElement("div");
   memeTopText.classList.add('meme-text', 'top-text');
   const memeBottomText = document.createElement("div");
   memeBottomText.classList.add('meme-text', 'bottom-text');
+  const memeClose = document.createElement('button');
+  memeClose.classList.add('btn-close', 'meme-close');
   // append children elements to meme box
   memeBox.appendChild(memeImage);
   memeBox.appendChild(memeTopText);
   memeBox.appendChild(memeBottomText);
+  memeBox.appendChild(memeClose);
   // update the meme image if file provided
   if (imageProvided) {
     const reader = new FileReader();
@@ -48,6 +51,12 @@ function generateMeme(event) {
   if (imageProvided || textProvided) {
     memesCreated++;
     memeBox.setAttribute('id', `meme-${memesCreated}`);
+    // add event listener for close button
+    memeClose.addEventListener("click", function () {
+      // get meme box parent element and remove from the DOM
+      const parentMemeBox = memeClose.parentElement;
+      parentMemeBox.remove();
+    });
     // add to end if first meme, otherwise before the most recent
     if (memesCreated === 1) mainPage.appendChild(memeBox);
     else {

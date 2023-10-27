@@ -30,7 +30,7 @@
 }
 
 .title-background {
-  background: #CCB4FF;
+  background: rgb(204, 180, 255);
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -68,6 +68,10 @@
   display: flex;
   align-items: baseline;
   flex-direction: row;
+}
+
+.upload-box{
+  margin-bottom: -15px;
 }
 
 .text-box {
@@ -133,10 +137,20 @@
   left: 50%;
   transform: translate(-50%, -5%);
 }
-
 .bottom-text {
   position: absolute;
   top: 95%;
   left: 50%;
   transform: translate(-50%, -95%);
+}
+
+/* modify color of bootstrap close to match title bar */
+.btn-close{
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgb(204, 180, 255)
+}
+/* position button top right of meme */
+.meme-close{
+  position: absolute;
+  top: 3%;
+  right: -10%;
 }
