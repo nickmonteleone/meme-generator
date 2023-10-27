@@ -82,6 +82,23 @@
   width: 275px;
 }
 
+.input-result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.input-result-text {
+  color: #100934;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+
 .meme-image {
   width: 300px;
   height: 300px;
@@ -91,6 +108,8 @@
 .meme-box {
   position: relative;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .meme-text {
@@ -102,6 +121,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* text positioning from https://w3schools.com/howto/howto_css_image_text.asp */
@@ -114,7 +136,7 @@
 
 .bottom-text {
   position: absolute;
-  top: 85%;
+  top: 95%;
   left: 50%;
-  transform: translate(-50%, -85%);
+  transform: translate(-50%, -95%);
 }

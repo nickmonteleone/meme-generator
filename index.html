@@ -15,43 +15,48 @@
 <body class="body-background">
   <section class="title-background">
     <h1 class="title-text">
-      Meme Generator
+      Meme Generator&nbsp;
       <img class="header-image" src="images/dat-boi.png" alt="Dat Boi">
     </h1>
   </section>
 
-  <section class="main-background">
+  <section class="main-background" id="main-page">
     <form class="input-box">
       <h2 class="param-text button-box">
         1. &nbsp;&nbsp;
-        <input id="image-file" type="file" value="Upload an Image">
+        <input id="input-image-file" type="file" value="Upload an Image">
       </h2>
       <br>
       <h2 class="param-text text-box">
         2. Enter top text:
-        <input type="text" id="top-text">
+        <input type="text" id="input-top-text">
       </h2>
       <br>
       <h2 class="param-text text-box">
         3. Enter bottom text:
-        <input type="text" id="bottom-text">
+        <input type="text" id="input-bottom-text">
       </h2>
       <br>
       <h2 class="param-text button-box">
         4. &nbsp;
         <input type="submit" value="Generate Meme">
       </h2>
-      <br><br>
     </form>
-    <div class="meme-box">
-      <img class="meme-image" src="images/dat-boi-bike.gif" alt="Placeholder">
-      <div class="meme-text top-text">Top Text</div>
-      <div class="meme-text bottom-text">Bottom</div>
+
+    <div class="input-result-box">
+      <br>
+      <h2 class="input-result-text" id="input-result-text">
+        Follow steps 1 - 4 to make a meme.
+      </h2>
+      <br>
     </div>
 
-
+    <!-- <div class="meme-box" id="meme-1"> -->
+      <!-- <img class="meme-image" src="images/dat-boi-bike.gif" alt="Placeholder" id="meme-image-1"> -->
+      <!-- <div class="meme-text top-text" id='meme-top-text-1'></div>
+      <div class="meme-text bottom-text" id='meme-bottom-text-1'></div> -->
+    <!-- </div> -->
   </section>
-
 
   <script src="script.js"></script>
 
