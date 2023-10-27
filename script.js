@@ -31,9 +31,7 @@ function generateMeme(event) {
     // add src for image, use input if file provided
     if (imageProvided) {
       const reader = new FileReader();
-      reader.onload = function (e) {
-        memeImage.src = e.target.result;
-      };
+      reader.addEventListener("load", () => memeImage.src = reader.result);
       reader.readAsDataURL(inputImageFile.files[0]);
     }
     else memeImage.src = "images/dat-boi-bike.gif";

@@ -70,10 +70,6 @@
   flex-direction: row;
 }
 
-.upload-box{
-  margin-bottom: -15px;
-}
-
 .text-box {
   display: flex;
   align-items: stretch;
@@ -96,8 +92,8 @@
 .input-result-text {
   color: #100934;
   font-size: 18px;
-  font-style: italic;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
   text-align: center;
 }
