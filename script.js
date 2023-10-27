@@ -55,18 +55,18 @@ function generateMeme(event) {
       const lastMeme = document.getElementsByClassName("meme-box")[0];
       mainPage.insertBefore(memeBox, lastMeme);
     }
+    // clear form fields if meme generated
+    inputImageFile.value = "";
+    inputTopText.value = "";
+    inputBottomText.value = "";
   }
   console.log(textProvided)
   // set result message based on what was provieded
   if (imageProvided && textProvided) {
     inputResultText.innerText = 'Nice meme!\nRetry steps 1-4 to make another.';
-    // clear form fields if meme was successful for both image, text
-    inputImageFile.value = "";
-    inputTopText.value = "";
-    inputBottomText.value = "";
   }
   else if (imageProvided) {
-    inputResultText.innerText = 'Cool image - try adding some text.';
+    inputResultText.innerText = 'Cool image.\nTry adding text next time.';
   }
   else if (textProvided) {
     inputResultText.innerText = 'No image provided.\nhere come dat boi!!!';
