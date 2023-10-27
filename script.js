@@ -77,7 +77,7 @@ function setResultMessage(imageProvided, textProvided) {
   // set result message based on what was provided
   const inputResultText = document.getElementById('input-result-text');
   if (imageProvided && textProvided) {
-    inputResultText.innerText = 'Nice meme!\nRetry steps 1-4 to make another.';
+    inputResultText.innerText = 'Nice meme!\nSubmit again to make another.';
   }
   else if (imageProvided) {
     inputResultText.innerText = 'Cool image.\nTry adding text next time.';
@@ -85,5 +85,5 @@ function setResultMessage(imageProvided, textProvided) {
   else if (textProvided) {
     inputResultText.innerText = 'No image provided.\nhere come dat boi!!!';
   }
-  else inputResultText.innerText = 'No inputs.\nComplete steps 1-4 and retry.';
+  else inputResultText.innerText = 'No inputs.\nComplete form and retry.';
 }
